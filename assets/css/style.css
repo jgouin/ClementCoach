@@ -25,7 +25,6 @@ body {
 
 .header {
     height: 10vh;
-
     flex-direction: row-reverse;
 }
 
@@ -51,8 +50,55 @@ li, li > a {
     list-style-type: none;
 }
 
-.footer {
+
+.presentation {
     position: fixed;
+    left: 14vw;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+
+    background-color: #001D26;
+    padding: 30px;
+    display: flex;
+    text-align: justify;
+
+}
+
+.profil_picture { 
+    height: 150px;
+}
+
+.pilates_picture {
+    width: 25%;
+    height: auto;
+    margin: 5px;
+}
+
+.presentation > .description {
+    margin: 20px;
+}
+
+.pilates {
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+    margin-top: 20px;
+
+    background-color: #001D26;
+    padding: 20px;
+    text-align: justify;
+
+}
+
+.pilates > .description {
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.footer {
+    position: absolute;
     height: 8vh;
     bottom: 0px;
 
@@ -81,4 +127,49 @@ li, li > a {
         margin: 2px;
         padding: 0;
     }
+
+    .presentation {
+        left: 5vw;
+        width: 90%;
+        height: auto;
+        margin-top: 40px;
+        padding: 15px;
+        padding-bottom: 0;
+    }
+
+    .presentation > .description {
+        margin-top: 0;
+    }
+
+    .profil_picture { 
+        height: 110px;
+    }
+    
+    .description {
+        margin: 0;
+        margin-left: 10px;
+        font-size: 11px;
+        max-height: 125px;
+    }
+
+    .presentation > .description > p {
+        max-height: 90px;
+        overflow: scroll;
+    }
+
+    .pilates_picture:first-child, .pilates_picture:last-child {
+        display: none;
+    }
+
+    .pilates_picture {
+        width: 50%;
+        height: auto;
+        margin: 5px;
+    }
+
+    .pilates > .description > p {
+        max-height: 120px;
+        overflow: scroll;
+    }
+
 }

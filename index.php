@@ -1,43 +1,32 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <title>ClémentCoach</title>
-</head>
-<body>
-    <header>
-         <div class="header">
-            <a href="#" class="m-4">Se Connecter</a>
-        </div>
-    
-        <nav>
-            <div>
-                <img class="logo" src="assets/images/logo.png" alt="Logo">
-            </div>
-            <ul class="d-flex">
-                <li><a href="#">Home</a></li>
-                <li> / </li>
-                <li><a href="#">Cours</a></li>
-                <li> / </li>
-                <li><a href="#">Réservation</a></li>
-                <li> / </li>
-                <li><a href="#">Accueillir un cours</a></li>
-            </ul>
-           
-        </nav>
-    </header>
+<?php
 
-    <footer>
-        <div class="footer">
-            <p class="m-2">07. 02. 68. 48. 72</p>
-            <p class="m-2">clementcoach@pilates.com</p>
-        </div>
-    </footer>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-</html>
+require_once 'templates/header.php';
 
+?>
+
+<section class="presentation">
+    <div>
+        <img class="profil_picture" src="assets/images/profil_picture.png" alt="Photo de profil">
+    </div>
+    <div class="description">
+        <h4>Présentation</h4>
+        <p>Diplômé d’un Master 2 en Activités Physiques adaptées et santé, je propose des séances de pilates de l’initiation au niveau intermédiare. Lors des sessions en petit groupe, vous aurez la possibilité de travail avec ou sans matériel.</p>
+    </div>
+
+</section>
+
+<section class="pilates">
+    <div class="d-flex justify-content-center">
+        <img class="pilates_picture" src="assets/images/pilates1.jpeg" alt="Photo pilates">
+        <img class="pilates_picture" src="assets/images/pilates2.jpeg" alt="Photo pilates">
+        <img class="pilates_picture" src="assets/images/pilates3.jpeg" alt="Photo pilates">
+    </div>
+    <div class="description">
+        <p>La méthode Pilates est pratiquée au tapis avec ou sans accessoires ou à l'aide d'appareils. Elle a pour objectif le développement des muscles profonds, l'amélioration de la posture, l'équilibrage musculaire et l'assouplissement articulaire, pour un entretien, une amélioration ou une restauration des fonctions physiques.</p>
+    </div>
+
+</section>
+
+<?php
+require_once 'templates/footer.php';
+?>
