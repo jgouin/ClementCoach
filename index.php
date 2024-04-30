@@ -1,5 +1,3 @@
-<h1>Le site est actuellemnt en maintenance, merci de votre comprehension</h1>
-
 <?php
 
 require_once(__DIR__.'/Model/header.php');

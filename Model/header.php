@@ -19,7 +19,7 @@ require_once 'session.php';
         <img class="logo" src='Assets/img/logo.png' alt="Logo"/>
 
 <?php
-   if($_SESSION["user"]){
+   if(isset($_SESSION["user"])){
         if($_SESSION["name"] === 'Admin' && $_SESSION["email"] === 'clementcoach@pilates.com'){
             echo ("<a href='logout.php'>Déconnexion</a>");
             echo ("<a href='admin.php'>Gérer mes créneaux</a>");
@@ -33,6 +33,7 @@ require_once 'session.php';
         }
     } else {
         echo ("<a href='./connexion.php'>Se Connecter</a>");
+        $host = "";
     }
 ?>
     </div>

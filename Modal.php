@@ -8,7 +8,7 @@ require_once('Model/data.php');
 $reservationController = new ReservationController();
 $reservations = $reservationController->getAll();
 
-if ($_SESSION['user']){
+if (isset($_SESSION['user'])){
   if ($_POST){
     $reservation = $reservationController->get($_POST['id']);
 
